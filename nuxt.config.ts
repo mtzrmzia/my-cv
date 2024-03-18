@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Alfredo Martínez | FrontEnd Engineer',
       bodyAttrs: {
-        class: 'antialiased font-inter',
+        class: 'antialiased font-inter dark:bg-gray-900',
       },
     },
   },

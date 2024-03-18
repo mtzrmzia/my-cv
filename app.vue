@@ -2,9 +2,7 @@
   <main
     class="md:p-16 mx-auto overflow-auto p-4 print:p-12 relative scroll-my-12"
   >
-    <section
-      class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6"
-    >
+    <section class="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
       <div class="flex items-center justify-between">
         <div class="flex-1 space-y-1.5">
           <h1 class="text-2xl font-bold">Alfredo Martínez</h1>
@@ -115,8 +113,8 @@
           successful transitions of products from the ground up. By leading
           teams effectively, I ensure a workspace where teams can flourish,
           adding to our collective ability to craft stunning products.
-          Currently, I work mostly with TypeScript, Vue, Nuxt, Node.js, and
-          Laravel. For over 7 years, I have been immersed in remote
+          Currently, I work mostly with TypeScript, TailwindCSS, Vue, Nuxt,
+          Node.js, and Laravel. For over 7 years, I have been immersed in remote
           collaborations with companies around the globe.
         </p>
       </section>
