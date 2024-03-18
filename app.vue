@@ -144,7 +144,30 @@
           >
             Led 4 developers team, migrate from webpack to vite, crafted custom
             core to ship the same code and components to all platforms,
-            implemented new features. Technologies: Vue 3, TypeScript
+            implemented new features. Technologies: Vue 3, TypeScript, Cypress.
+          </div>
+        </div>
+        <div class="rounded-lg bg-card">
+          <div class="flex flex-col space-y-1.5">
+            <div class="flex items-center justify-between gap-x-2 text-base">
+              <h3
+                class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none"
+              >
+                <ULink to="https://www.apithy.com/">Apithy</ULink>
+                <UBadge color="gray" variant="soft">Remote</UBadge>
+              </h3>
+              <div class="text-sm tabular-nums text-gray-500">2020 - 2022</div>
+            </div>
+            <h4 class="font-mono text-sm leading-none">
+              Senior FrontEnd Developer
+            </h4>
+          </div>
+          <div
+            class="text-pretty font-mono text-gray-500 dark:text-gray-400 mt-2 text-xs"
+          >
+            Created a multilingual E-Learning platform with payment processing,
+            worked on improving the main website so that it works in all
+            browsers. Technologies: Vue, Nuxt, Vuex, TailwindCSS.
           </div>
         </div>
       </section>
