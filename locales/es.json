@@ -1,0 +1,58 @@
+{
+  "common": {
+    "label": {
+      "remote": "Remoto",
+      "mexico": "México"
+    }
+  },
+  "intro": {
+    "summary": "Ingeniero FrontEnd enfocado en crear impresionantes productos digitales"
+  },
+  "about": {
+    "title": "Resumen",
+    "text": "Mi trayectoria como ingeniero FrontEnd ha estado marcada por varias etapas exitosas de creación de productos desde cero. Al liderar equipos de forma eficaz, garantizo un espacio de trabajo donde los equipos puedan prosperar, lo que aumenta nuestra capacidad colectiva para crear productos impresionantes. Actualmente trabajo principalmente con TypeScript, TailwindCSS, Vue, Nuxt, Node.js y Laravel. Desde hace más de 7 años estoy inmerso en colaboraciones remotas con empresas de todo el mundo."
+  },
+  "workExperience": {
+    "title": "Experiencia Laboral",
+    "works": {
+      "devsalsa": {
+        "description": "Dirigí el equipo de 4 desarrolladores, migré de webpack a vite, diseñé un núcleo personalizado para enviar el mismo código y componentes a todas las plataformas, implementé nuevas funciones. Tecnologías: Vue 3, TypeScript, Pinia, Cypress, Vitest"
+      },
+      "apithy": {
+        "description": "Creé una plataforma de E-Learning con soporte multi idioma, incluyendo procesamiento de pagos, trabajé en mejorar el sitio web principal para que funcione en todos los navegadores. Tecnologías: Vue, Nuxt, Vuex, TailwindCSS"
+      },
+      "vocces": {
+        "description": "Desarrollé un SaaS multi idioma (articketing). Empecé el proyecto desde cero, implementando nuevas funcionalidades con un enfoque mobile first. Tecnologías: Vue, JavaScript, SASS, Laravel"
+      },
+      "freelance": {
+        "description": "En mi etapa como freelance, facilité la transición digital de las pequeñas empresas mediante la implementación de sitios web, E-commerce y SaaS optimizados con SEO, aumentando así su presencia en el mercado online. Tecnologías: Vue, Nuxt, TailwindCSS, Laravel, PHP"
+      },
+      "bicho": {
+        "description": "Me dediqué al análisis y aplicación de principios de diseño para materializar las propuestas del equipo UX/UI. He desarrollado interacciones de usuario y gestionado la comunicación de datos con el servidor back-end, para asegurar una óptima experiencia de usuario en la plataforma web. Tecnologías: WordPress, CSS, Laravel, PHP"
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "school": "Universidad EPCA",
+    "career": "Ingeniería en Sistemas Computacionales"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "keyboardManager": {
+    "text": "Presione {0} para abrir el menú de comandos",
+    "commandPalette": {
+      "placeholder": "Escribe un comando o busca...",
+      "groups": {
+        "actions": {
+          "title": "Acciones",
+          "print": "Imprimir"
+        },
+        "language": {
+          "title": "Cambiar idioma"
+        }
+      }
+    }
+  }
+}

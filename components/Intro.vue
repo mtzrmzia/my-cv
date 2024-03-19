@@ -5,7 +5,7 @@
       <p
         class="max-w-md font-mono text-sm text-gray-500 text-pretty dark:text-gray-400"
       >
-        FrontEnd Engineer focused on creating stunning digital products
+        {{ $t('intro.summary') }}
       </p>
       <p
         class="max-w-md items-center font-mono text-xs text-gray-500 text-pretty dark:text-gray-400"

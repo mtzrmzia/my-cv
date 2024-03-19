@@ -1,6 +1,8 @@
 <template>
   <section class="flex flex-col gap-y-3">
-    <h2 class="text-xl font-bold">Work Experience</h2>
+    <h2 class="text-xl font-bold">
+      {{ $t('workExperience.title') }}
+    </h2>
     <WorkExperienceItem
       v-for="item in experiences"
       :key="item.company"
@@ -10,55 +12,55 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import type { ExperienceItem } from '~/types/ExperienceItem.types';
 
 defineOptions({
   name: 'WorkExperience',
 });
 
-const experiences = [
-  {
-    company: 'Devsalsa',
-    website: 'https://devsalsa.com/',
-    location: 'Remote',
-    position: 'Senior FrontEnd Lead Developer',
-    time: '2022 - 2024',
-    description:
-      'Led 4 developers team, migrate from webpack to vite, crafted custom core to ship the same code and components to all platforms, implemented new features. Technologies: Vue 3, TypeScript, Pinia, Cypress, Vitest',
-  },
-  {
-    company: 'Apithy',
-    website: 'https://www.apithy.com/',
-    location: 'Remote',
-    position: 'Senior FrontEnd Developer',
-    time: '2020 - 2022',
-    description:
-      'Created a multilingual E-Learning platform with payment processing, worked on improving the main website so that it works in all browsers. Technologies: Vue, Nuxt, Vuex, TailwindCSS',
-  },
-  {
-    company: 'Vocces LAB',
-    website: 'https://vocces.com/',
-    location: 'Remote',
-    position: 'FrontEnd Developer',
-    time: '2020 - 2020',
-    description:
-      'Created a multilingual SaaS (articketing). Started with the boilerplate, implemented new features with mobile first approach. Technologies: Vue, JavaScript, SASS, Laravel',
-  },
-  {
-    company: 'Freelance FullStack',
-    location: 'Mexico',
-    position: 'FullStack Developer',
-    time: '2018 - 2020',
-    description:
-      "In my role as a freelancer, I facilitated small businesses' digital transition by implementing SEO-optimized websites, e-commerce, and SaaS, thereby augmenting their online market presence. Technologies: Vue, Nuxt, TailwindCSS, Laravel, PHP",
-  },
-  {
-    company: 'Bicho Raro',
-    location: 'Mexico',
-    position: 'FrontEnd Developer',
-    time: '2017 - 2018',
-    description:
-      'I have dedicated myself to the analysis and application of design principles to materialize the proposals of the UX/UI team. I have developed user interactions and managed data communication with the back-end server, to ensure an optimal user experience on the web platform. Technologies: WordPress, CSS, Laravel, PHP',
-  },
-] as ExperienceItem[];
+const { t } = useI18n();
+
+const experiences = computed((): ExperienceItem[] => {
+  return [
+    {
+      company: 'Devsalsa',
+      website: 'https://devsalsa.com/',
+      location: t('common.label.remote'),
+      position: 'Senior FrontEnd Lead Developer',
+      time: '2022 - 2024',
+      description: t('workExperience.works.devsalsa.description'),
+    },
+    {
+      company: 'Apithy',
+      website: 'https://www.apithy.com/',
+      location: t('common.label.remote'),
+      position: 'Senior FrontEnd Developer',
+      time: '2020 - 2022',
+      description: t('workExperience.works.apithy.description'),
+    },
+    {
+      company: 'Vocces LAB',
+      website: 'https://vocces.com/',
+      location: t('common.label.remote'),
+      position: 'FrontEnd Developer',
+      time: '2020 - 2020',
+      description: t('workExperience.works.vocces.description'),
+    },
+    {
+      company: 'Freelance FullStack',
+      location: t('common.label.mexico'),
+      position: 'FullStack Developer',
+      time: '2018 - 2020',
+      description: t('workExperience.works.freelance.description'),
+    },
+    {
+      company: 'Bicho Raro',
+      location: t('common.label.mexico'),
+      position: 'FrontEnd Developer',
+      time: '2017 - 2018',
+      description: t('workExperience.works.bicho.description'),
+    },
+  ];
+});
 </script>

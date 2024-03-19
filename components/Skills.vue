@@ -1,6 +1,8 @@
 <template>
   <section class="flex flex-col gap-y-3">
-    <h2 class="text-xl font-bold">Skills</h2>
+    <h2 class="text-xl font-bold">
+      {{ $t('skills.title') }}
+    </h2>
     <div class="flex flex-wrap gap-1">
       <UBadge
         v-for="(skill, index) in skills"
@@ -32,5 +34,6 @@ const skills = [
   'Jest/Vitest',
   'NodeJs',
   'PHP/Laravel',
+  'Git',
 ];
 </script>

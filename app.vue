@@ -8,7 +8,7 @@
       <WorkExperience />
       <Education />
       <Skills />
+      <KeyboardManager />
     </section>
   </main>
 </template>
-<script setup lang="ts"></script>
