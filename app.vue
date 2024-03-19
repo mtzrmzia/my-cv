@@ -7,6 +7,7 @@
       <About />
       <WorkExperience />
       <Education />
+      <Skills />
     </section>
   </main>
 </template>

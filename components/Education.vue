@@ -20,5 +20,3 @@ defineOptions({
   name: 'Education',
 });
 </script>
-
-<style lang="scss" scoped></style>
