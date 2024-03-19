@@ -1,15 +1,17 @@
 <template>
-  <div
-    class="fixed right-0 bottom-0 left-0 hidden print:hidden border-t border-t-gray-200 bg-gray-50 p-1 text-center dark:border-t-gray-700 dark:bg-gray-800 lg:block"
-  >
-    <Translation
-      class="text-sm text-gray-500 dark:text-gray-400"
-      keypath="keyboardManager.text"
-      tag="p"
-      scope="global"
+  <div>
+    <div
+      class="fixed right-0 bottom-0 left-0 hidden print:hidden border-t border-t-gray-200 bg-gray-50 p-1 text-center dark:border-t-gray-700 dark:bg-gray-800 lg:block"
     >
-      <UKbd>{{ metaSymbol }}K</UKbd>
-    </Translation>
+      <Translation
+        class="text-sm text-gray-500 dark:text-gray-400"
+        keypath="keyboardManager.text"
+        tag="p"
+        scope="global"
+      >
+        <UKbd>{{ metaSymbol }}K</UKbd>
+      </Translation>
+    </div>
     <UModal v-model="isOpen">
       <UCommandPalette
         ref="commandPaletteRef"
@@ -19,6 +21,20 @@
         @update:model-value="onSelect"
       />
     </UModal>
+    <UButton
+      color="white"
+      variant="solid"
+      size="lg"
+      class="fixed right-4 bottom-4 flex lg:hidden rounded-full"
+      @click="onOpenCommandPalette"
+    >
+      <template #leading>
+        <UIcon
+          class="h-5 w-5 text-gray-500 dark:text-gray-400"
+          name="i-ph-command-duotone"
+        />
+      </template>
+    </UButton>
   </div>
 </template>
 
@@ -70,16 +86,20 @@ function onSelect(option: any) {
   option.click();
 }
 
-function setLanguage(locale: LocaleObject) {
-  setLocale(locale.code);
-  isOpen.value = false;
-}
-
 function printPage() {
   isOpen.value = false;
   setTimeout(() => {
     window.print();
   }, 300);
+}
+
+function setLanguage(locale: LocaleObject) {
+  setLocale(locale.code);
+  isOpen.value = false;
+}
+
+function onOpenCommandPalette() {
+  isOpen.value = true;
 }
 
 defineShortcuts({

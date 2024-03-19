@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
   ui: {
-    icons: ['heroicons', 'ph', 'solar', 'fa6-brands'],
+    icons: ['heroicons', 'ph', 'fa6-brands'],
   },
   googleFonts: {
     display: 'swap',
