@@ -6,6 +6,7 @@
       <Intro />
       <About />
       <WorkExperience />
+      <Education />
     </section>
   </main>
 </template>

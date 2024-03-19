@@ -22,7 +22,7 @@
       </h4>
     </div>
     <div
-      class="text-pretty font-mono text-gray-500 dark:text-gray-400 mt-2 text-xs"
+      class="mt-2 font-mono text-xs text-gray-500 text-pretty dark:text-gray-400"
     >
       {{ item.description }}
     </div>

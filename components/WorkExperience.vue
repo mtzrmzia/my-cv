@@ -1,5 +1,5 @@
 <template>
-  <section class="flex min-h-0 flex-col gap-y-3">
+  <section class="flex flex-col gap-y-3">
     <h2 class="text-xl font-bold">Work Experience</h2>
     <WorkExperienceItem
       v-for="item in experiences"
