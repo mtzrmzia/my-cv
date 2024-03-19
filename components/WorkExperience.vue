@@ -60,14 +60,5 @@ const experiences = [
     description:
       'I have dedicated myself to the analysis and application of design principles to materialize the proposals of the UX/UI team. I have developed user interactions and managed data communication with the back-end server, to ensure an optimal user experience on the web platform. Technologies: WordPress, CSS, Laravel, PHP',
   },
-  {
-    company: 'Calzado Andrea',
-    website: 'https://mx.andrea.com/',
-    location: 'Mexico',
-    position: 'QA Tester',
-    time: '2016 - 2017',
-    description:
-      'Engaging in the role of a QA Developer, I applied proactive strategies, executing comprehensive testing during all project stages. My defined goal was to prevent bugs and solidify the quality of the software. Technologies: Software created by the company',
-  },
 ] as ExperienceItem[];
 </script>

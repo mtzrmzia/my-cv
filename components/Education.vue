@@ -8,7 +8,9 @@
           <span class="text-sm tabular-nums text-gray-500">2015 -2019</span>
         </div>
       </div>
-      <div class="mt-2 font-mono text-sm text-pretty text-muted-foreground">
+      <div
+        class="mt-2 font-mono text-sm text-pretty text-gray-500 dark:text-gray-400"
+      >
         Degree in Computer Systems Engineering
       </div>
     </div>
