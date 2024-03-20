@@ -35,5 +35,6 @@ const skills = [
   'NodeJs',
   'PHP/Laravel',
   'Git',
+  'Vercel',
 ];
 </script>

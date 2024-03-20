@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "Resumen",
-    "text": "Mi trayectoria como ingeniero FrontEnd ha estado marcada por varias etapas exitosas de creación de productos desde cero. Al liderar equipos de forma eficaz, garantizo un espacio de trabajo donde los equipos puedan prosperar, lo que aumenta nuestra capacidad colectiva para crear productos impresionantes. Actualmente trabajo principalmente con TypeScript, TailwindCSS, Vue, Nuxt, Node.js y Laravel. Desde hace más de 7 años estoy inmerso en colaboraciones remotas con empresas de todo el mundo."
+    "text": "Mi trayectoria como ingeniero FrontEnd ha estado marcada por varias etapas exitosas de creación de productos desde cero. Al liderar equipos de forma eficaz, garantizo un espacio de trabajo donde los equipos puedan prosperar, lo que aumenta nuestra capacidad colectiva para crear productos impresionantes. Actualmente trabajo principalmente con TypeScript, Vue, Nuxt,TailwindCSS, Node.js, and Laravel. Desde hace más de 7 años estoy inmerso en colaboraciones remotas con empresas de todo el mundo."
   },
   "workExperience": {
     "title": "Experiencia Laboral",
@@ -43,6 +43,28 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "languages": {
+    "title": "Idiomas"
+  },
+  "strengths": {
+    "title": "Competencias",
+    "technicalSkills": {
+      "title": "Habilidades técnicas",
+      "description": "Competente en tecnología moderna"
+    },
+    "communicationSkills": {
+      "title": "Habilidades de comunicación",
+      "description": "Capacidad para articular problemas técnicos."
+    },
+    "entrepreneurialSpirit": {
+      "title": "Espíritu de líder",
+      "description": "Dispuesto a asumir la propiedad de un extremo a otro"
+    },
+    "teamWork": {
+      "title": "Trabajo en equipo",
+      "description": "Capacidad para colaborar eficazmente con otros para lograr objetivos comunes"
+    }
   },
   "keyboardManager": {
     "text": "Presione {0} para abrir el menú de comandos",

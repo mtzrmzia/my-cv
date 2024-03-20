@@ -3,7 +3,7 @@
     <h2 class="text-xl font-bold">
       {{ $t('education.title') }}
     </h2>
-    <div class="rounded-lg bg-card text-card-foreground">
+    <div class="flex flex-col">
       <div class="flex flex-col space-y-1.5">
         <div class="flex items-center justify-between gap-x-2 text-base">
           <h3 class="font-semibold leading-none">

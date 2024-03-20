@@ -26,7 +26,7 @@
       color="white"
       variant="solid"
       size="lg"
-      class="fixed right-4 bottom-4 flex lg:hidden rounded-full"
+      class="fixed right-4 bottom-4 flex lg:hidden rounded-full print:hidden"
       @click="onOpenCommandPalette"
     >
       <template #leading>

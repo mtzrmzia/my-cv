@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg bg-card">
+  <div>
     <div class="flex flex-col space-y-1.5">
       <div class="flex items-center justify-between gap-x-2 text-base">
         <h3
