@@ -57,15 +57,6 @@ const modalUi = {
   container: 'flex min-h-full items-center justify-center text-center',
 };
 
-const actions = [
-  {
-    id: 'print',
-    label: t('keyboardManager.commandPalette.groups.actions.print'),
-    icon: 'i-heroicons-printer',
-    click: () => printPage(),
-  },
-];
-
 const languages = locales.value.map((locale: LocaleObject) => ({
   id: locale.code,
   label: locale.name,
@@ -78,7 +69,14 @@ const groups = computed(() => {
     {
       key: 'actions',
       label: t('keyboardManager.commandPalette.groups.actions.title'),
-      commands: actions,
+      commands: [
+        {
+          id: 'print',
+          label: t('keyboardManager.commandPalette.groups.actions.print'),
+          icon: 'i-heroicons-printer',
+          click: () => printPage(),
+        },
+      ],
     },
     {
       key: 'languages',
