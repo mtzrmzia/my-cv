@@ -12,7 +12,7 @@
         <UKbd>{{ metaSymbol }}K</UKbd>
       </Translation>
     </div>
-    <UModal v-model="isOpen" :fullscreen="isDeviceMobile">
+    <UModal v-model="isOpen" :ui="modalUi">
       <UCommandPalette
         ref="commandPaletteRef"
         :groups="groups"
@@ -52,22 +52,10 @@ const { locales, setLocale, t } = useI18n();
 
 const commandPaletteRef = ref();
 const isOpen = ref(false);
-const isDeviceMobile = ref(false);
 
-if (import.meta.client) {
-  const { isMobile } = useBrowser();
-  isDeviceMobile.value = isMobile();
-}
-
-watch(
-  () => isDeviceMobile.value,
-  (newValue) => {
-    console.log(newValue);
-  },
-  {
-    immediate: true,
-  },
-);
+const modalUi = {
+  container: 'flex min-h-full items-center justify-center text-center',
+};
 
 const actions = [
   {
