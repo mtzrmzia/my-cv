@@ -20,19 +20,19 @@
     "title": "Experiencia Laboral",
     "works": {
       "devsalsa": {
-        "description": "Dirigí el equipo de 4 desarrolladores, migré de webpack a vite, diseñé un núcleo personalizado para enviar el mismo código y componentes a todas las plataformas, implementé nuevas funciones. Tecnologías: Vue 3, TypeScript, Pinia, Cypress, Vitest"
+        "description": "Líder de un equipo de 4 desarrolladores, participé en la migración de webpack a vite y en el diseño de un core personalizado para reutilizar componentes y código en todas las plataformas, implementé nuevas funciones. Tecnologías: Vue 3, TypeScript, Pinia, Cypress, Vitest"
       },
       "apithy": {
-        "description": "Creé una plataforma de E-Learning con soporte multi idioma, incluyendo procesamiento de pagos, trabajé en mejorar el sitio web principal para que funcione en todos los navegadores. Tecnologías: Vue, Nuxt, Vuex, TailwindCSS"
+        "description": "Desarrollo de una plataforma de E-Learning con soporte multi idioma, incluyendo procesamiento de pagos, mejoras en el sitio web principal para que funcione en todos los navegadores. Tecnologías: Vue, Nuxt, Vuex, TailwindCSS"
       },
       "vocces": {
-        "description": "Desarrollé un SaaS multi idioma (articketing). Empecé el proyecto desde cero, implementando nuevas funcionalidades con un enfoque mobile first. Tecnologías: Vue, JavaScript, SASS, Laravel"
+        "description": "Desarrollo e implementación de un SaaS multi idioma (articketing). Se inició el proyecto desde cero, implementando nuevas funcionalidades con un enfoque mobile first. Tecnologías: Vue, JavaScript, SASS, Laravel"
       },
       "freelance": {
-        "description": "En mi etapa como freelance, facilité la transición digital de las pequeñas empresas mediante la implementación de sitios web, E-commerce y SaaS optimizados con SEO, aumentando así su presencia en el mercado online. Tecnologías: Vue, Nuxt, TailwindCSS, Laravel, PHP"
+        "description": "En mi etapa como freelance, se ayudó en la transición digital de las pequeñas empresas mediante la implementación de sitios web, E-commerce y SaaS optimizados con SEO, aumentando así su presencia en el mercado online. Tecnologías: Vue, Nuxt, TailwindCSS, Laravel, PHP"
       },
       "bicho": {
-        "description": "Me dediqué al análisis y aplicación de principios de diseño para materializar las propuestas del equipo UX/UI. He desarrollado interacciones de usuario y gestionado la comunicación de datos con el servidor back-end, para asegurar una óptima experiencia de usuario en la plataforma web. Tecnologías: WordPress, CSS, Laravel, PHP"
+        "description": "Análisis y aplicación de principios de diseño para materializar las propuestas del equipo UX/UI. Desarrollo de  interacciones de usuario y gestión de la comunicación de datos con el servidor back-end mediante APIs, para asegurar una óptima experiencia de usuario en la plataforma web. Tecnologías: WordPress, CSS, Laravel, PHP"
       }
     }
   },
@@ -59,7 +59,7 @@
     },
     "entrepreneurialSpirit": {
       "title": "Espíritu de líder",
-      "description": "Dispuesto a asumir la propiedad de un extremo a otro"
+      "description": "Dispuesto a asumir los riesgos de un extremo a otro"
     },
     "teamWork": {
       "title": "Trabajo en equipo",

@@ -4,7 +4,7 @@
       <h1 class="text-6xl font-bold text-left text-gray-900">
         {{ title }}
       </h1>
-      <p class="font-medium text-xl">
+      <p class="font-medium text-2xl">
         {{ description }}
       </p>
     </div>
