@@ -12,12 +12,13 @@
         <UKbd>{{ metaSymbol }}K</UKbd>
       </Translation>
     </div>
-    <UModal v-model="isOpen">
+    <UModal v-model="isOpen" :fullscreen="isDeviceMobile">
       <UCommandPalette
         ref="commandPaletteRef"
         :groups="groups"
         :autoselect="false"
         :placeholder="$t('keyboardManager.commandPalette.placeholder')"
+        :autofocus="false"
         @update:model-value="onSelect"
       />
     </UModal>
@@ -48,8 +49,25 @@ defineOptions({
 
 const { metaSymbol } = useShortcuts();
 const { locales, setLocale, t } = useI18n();
+
 const commandPaletteRef = ref();
 const isOpen = ref(false);
+const isDeviceMobile = ref(false);
+
+if (import.meta.client) {
+  const { isMobile } = useBrowser();
+  isDeviceMobile.value = isMobile();
+}
+
+watch(
+  () => isDeviceMobile.value,
+  (newValue) => {
+    console.log(newValue);
+  },
+  {
+    immediate: true,
+  },
+);
 
 const actions = [
   {
