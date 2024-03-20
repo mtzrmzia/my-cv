@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'Alfredo Martínez | FrontEnd Engineer',
       bodyAttrs: {
         class: 'antialiased dark:bg-gray-900',
       },
@@ -24,6 +23,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     // https://nuxt.com/modules/i18n
     '@nuxtjs/i18n',
+    // https://nuxt.com/modules/og-image
+    'nuxt-og-image',
   ],
   ui: {
     icons: ['heroicons', 'ph', 'fa6-brands'],
@@ -50,16 +51,22 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         name: 'English',
         file: 'en.json',
       },
       {
         code: 'es',
+        iso: 'es-MX',
         name: 'Español',
         file: 'es.json',
       },
     ],
     defaultLocale: 'en',
     vueI18n: './i18n.config.ts',
+    baseUrl: 'https://cv.alfredom.dev',
+  },
+  site: {
+    url: 'https://cv.alfredom.dev',
   },
 });

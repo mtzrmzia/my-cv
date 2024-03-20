@@ -5,6 +5,10 @@
       "mexico": "México"
     }
   },
+  "seo": {
+    "title": "Mi CV {'|'} Alfredo Martínez - FrontEnd Engineer",
+    "description": "Un CV minimalista y fácil de imprimir."
+  },
   "intro": {
     "summary": "Ingeniero FrontEnd enfocado en crear impresionantes productos digitales"
   },
