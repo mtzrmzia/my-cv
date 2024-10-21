@@ -11,11 +11,14 @@
         class="max-w-md items-center font-mono text-xs text-gray-500 text-pretty dark:text-gray-400"
       >
         <ULink
-          class="inline-flex items-center leading-none gap-x-1.5 hover:underline"
-          to="https://maps.app.goo.gl/N4AC13tG2Z6KThFN7"
+          class="inline-flex items-center leading-none hover:underline"
+          to="https://maps.apple.com/place?q=Le%C3%B3n&ll=21.1222267%2C-101.6632405&auid=5521045738737275844&lsp=7618&address=Le%C3%B3n%2C%20Gto.%2C%20M%C3%A9xico"
           target="_blank"
         >
-          <UIcon class="h-4 w-4" name="i-heroicons-globe-americas" dynamic />
+          <UIcon
+            class="h-4 w-4 mr-1.5 print:hidden flex"
+            name="ph:map-pin-duotone"
+          />
           León, Gto. México, UTC-6
         </ULink>
       </p>
@@ -23,27 +26,9 @@
         class="flex print:hidden gap-x-1 pt-1 font-mono text-sm text-gray-500 dark:text-gray-400"
       >
         <UButton
-          to="mailto:ialfredo.mtz.rmz@gmail.com"
-          color="white"
-          variant="solid"
-        >
-          <template #leading>
-            <UIcon
-              class="h-5 w-5 text-gray-500 dark:text-gray-400"
-              name="i-ph-envelope-simple-duotone"
-            />
-          </template>
-        </UButton>
-        <UButton to="tel:+524776462056" color="white" variant="solid">
-          <template #leading>
-            <UIcon
-              class="h-5 w-5 text-gray-500 dark:text-gray-400"
-              name="i-ph-phone-duotone"
-            />
-          </template>
-        </UButton>
-        <UButton
-          to="https://github.com/alfredomtzrmz"
+          v-for="link in socialLinks"
+          :key="link.id"
+          :to="link.to"
           target="_blank"
           color="white"
           variant="solid"
@@ -51,33 +36,7 @@
           <template #leading>
             <UIcon
               class="h-5 w-5 text-gray-500 dark:text-gray-400"
-              name="i-ph-github-logo-duotone"
-            />
-          </template>
-        </UButton>
-        <UButton
-          to="https://www.linkedin.com/in/alfredomtzrmz/"
-          target="_blank"
-          color="white"
-          variant="solid"
-        >
-          <template #leading>
-            <UIcon
-              class="h-5 w-5 text-gray-500 dark:text-gray-400"
-              name="i-ph-linkedin-logo-duotone"
-            />
-          </template>
-        </UButton>
-        <UButton
-          to="https://twitter.com/alfredo_mtzrmz"
-          target="_blank"
-          color="white"
-          variant="solid"
-        >
-          <template #leading>
-            <UIcon
-              class="h-5 w-5 text-gray-500 dark:text-gray-400"
-              name="i-fa6-brands-x-twitter"
+              :name="link.icon"
             />
           </template>
         </UButton>
@@ -85,14 +44,13 @@
       <div
         class="print:flex hidden flex-col gap-x-1 font-mono text-sm text-gray-500 dark:text-gray-400"
       >
-        <a href="mailto:ialfredo.mtz.rmz@gmail.com">
-          <span class="underline">ialfredo.mtz.rmz@gmail.com</span> </a
-        ><a href="tel:+524776462056"
-          ><span class="underline">+524776462056</span></a
-        >
+        <span class="underline">hello@alfredom.dev</span>
+        <span class="underline"> +524776462056 </span>
       </div>
     </div>
-    <span class="relative flex shrink-0 overflow-hidden rounded-xl size-28">
+    <span
+      class="relative print:hidden flex shrink-0 overflow-hidden rounded-xl size-28"
+    >
       <NuxtImg src="/avatar/me.jpg" alt="Alfredo Martínez" />
     </span>
   </div>
@@ -102,4 +60,37 @@
 defineOptions({
   name: 'Intro',
 });
+
+const socialLinks = [
+  {
+    id: 'email',
+    icon: 'ph-envelope-simple-duotone',
+    to: 'mailto:hello@alfredom.dev',
+  },
+  {
+    id: 'phone',
+    icon: 'ph-phone-duotone',
+    to: 'tel:+524776462056',
+  },
+  {
+    id: 'website',
+    icon: 'ph:globe-simple-duotone',
+    to: 'https://alfredom.dev',
+  },
+  {
+    id: 'github',
+    icon: 'ph-github-logo-duotone',
+    to: 'https://github.com/mtzrmzia',
+  },
+  {
+    id: 'linkedin',
+    icon: 'ph-linkedin-logo-duotone',
+    to: 'https://www.linkedin.com/in/mtzrmzia/',
+  },
+  {
+    id: 'twitter',
+    icon: 'fa6-brands-x-twitter',
+    to: 'https://x.com/mtzrmzia',
+  },
+];
 </script>
