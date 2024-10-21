@@ -26,9 +26,6 @@ export default defineNuxtConfig({
     // https://nuxt.com/modules/og-image
     'nuxt-og-image',
   ],
-  ui: {
-    icons: ['heroicons', 'ph', 'fa6-brands'],
-  },
   googleFonts: {
     display: 'swap',
     download: true,
@@ -69,4 +66,5 @@ export default defineNuxtConfig({
   site: {
     url: 'https://cv.alfredom.dev',
   },
+  compatibilityDate: '2024-10-21',
 });
