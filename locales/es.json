@@ -19,6 +19,9 @@
   "workExperience": {
     "title": "Experiencia Laboral",
     "works": {
+      "pemex": {
+        "description": "Desarrollo e implementación de una plataforma interna para gestión y administración de contratos y procesos de negocios. Tecnologías: Vue 3, Nuxt 3, TanStack Query, Vuetify, .NET"
+      },
       "devsalsa": {
         "description": "Líder de un equipo de 4 desarrolladores, participé en la migración de webpack a vite y en el diseño de un core personalizado para reutilizar componentes y código en todas las plataformas, implementé nuevas funciones. Tecnologías: Vue 3, TypeScript, Pinia, Cypress, Vitest"
       },
@@ -33,6 +36,11 @@
       },
       "bicho": {
         "description": "Análisis y aplicación de principios de diseño para materializar las propuestas del equipo UX/UI. Desarrollo de  interacciones de usuario y gestión de la comunicación de datos con el servidor back-end mediante APIs, para asegurar una óptima experiencia de usuario en la plataforma web. Tecnologías: WordPress, CSS, Laravel, PHP"
+      }
+    },
+    "time": {
+      "pemex": {
+        "lapse": "2024 - Actual"
       }
     }
   },
