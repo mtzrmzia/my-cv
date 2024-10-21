@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   modules: [
     // https://nuxt.com/modules/ui
     '@nuxt/ui',
-    // https://nuxt.com/modules/google-fonts
-    '@nuxtjs/google-fonts',
+    // https://nuxt.com/modules/fonts
+    '@nuxt/fonts',
     // https://nuxt.com/modules/image
     '@nuxt/image',
     // https://nuxt.com/modules/i18n
@@ -26,14 +26,13 @@ export default defineNuxtConfig({
     // https://nuxt.com/modules/og-image
     'nuxt-og-image',
   ],
-  googleFonts: {
-    display: 'swap',
-    download: true,
-    families: {
-      Inter: {
-        wght: '100..900',
+  fonts: {
+    families: [
+      {
+        name: 'Inter',
       },
-    },
+    ],
+    provider: 'google',
   },
   image: {
     provider: 'imagekit',
